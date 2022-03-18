@@ -1,0 +1,64 @@
+Determining if the log exist failed with the following output:
+Change Dir: /mnt/c/Users/Javier Portorreal/Documents/OSS/cmake/Help/guide/tutorial/Step5_build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_140be/fast && /usr/bin/make -f CMakeFiles/cmTC_140be.dir/build.make CMakeFiles/cmTC_140be.dir/build
+make[1]: Entering directory '/mnt/c/Users/Javier Portorreal/Documents/OSS/cmake/Help/guide/tutorial/Step5_build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_140be.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_140be.dir/CheckSymbolExists.c.o   -c "/mnt/c/Users/Javier Portorreal/Documents/OSS/cmake/Help/guide/tutorial/Step5_build/CMakeFiles/CMakeTmp/CheckSymbolExists.c"
+Linking C executable cmTC_140be
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_140be.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_140be.dir/CheckSymbolExists.c.o  -o cmTC_140be 
+/usr/bin/ld: CMakeFiles/cmTC_140be.dir/CheckSymbolExists.c.o: in function `main':
+CheckSymbolExists.c:(.text+0x1f): undefined reference to `log'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_140be.dir/build.make:87: cmTC_140be] Error 1
+make[1]: Leaving directory '/mnt/c/Users/Javier Portorreal/Documents/OSS/cmake/Help/guide/tutorial/Step5_build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_140be/fast] Error 2
+
+
+File /mnt/c/Users/Javier Portorreal/Documents/OSS/cmake/Help/guide/tutorial/Step5_build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <math.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef log
+  return ((int*)(&log))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the exp exist failed with the following output:
+Change Dir: /mnt/c/Users/Javier Portorreal/Documents/OSS/cmake/Help/guide/tutorial/Step5_build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_15834/fast && /usr/bin/make -f CMakeFiles/cmTC_15834.dir/build.make CMakeFiles/cmTC_15834.dir/build
+make[1]: Entering directory '/mnt/c/Users/Javier Portorreal/Documents/OSS/cmake/Help/guide/tutorial/Step5_build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_15834.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_15834.dir/CheckSymbolExists.c.o   -c "/mnt/c/Users/Javier Portorreal/Documents/OSS/cmake/Help/guide/tutorial/Step5_build/CMakeFiles/CMakeTmp/CheckSymbolExists.c"
+Linking C executable cmTC_15834
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_15834.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_15834.dir/CheckSymbolExists.c.o  -o cmTC_15834 
+/usr/bin/ld: CMakeFiles/cmTC_15834.dir/CheckSymbolExists.c.o: in function `main':
+CheckSymbolExists.c:(.text+0x1f): undefined reference to `exp'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_15834.dir/build.make:87: cmTC_15834] Error 1
+make[1]: Leaving directory '/mnt/c/Users/Javier Portorreal/Documents/OSS/cmake/Help/guide/tutorial/Step5_build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_15834/fast] Error 2
+
+
+File /mnt/c/Users/Javier Portorreal/Documents/OSS/cmake/Help/guide/tutorial/Step5_build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <math.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef exp
+  return ((int*)(&exp))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}

@@ -1,0 +1,1 @@
+Resources taken from CMake step 5 guide
